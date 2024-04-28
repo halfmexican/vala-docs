@@ -12,4 +12,4 @@ In this chapter, we will:
     :hidden:
 
     Re-Introduction to Arrays <06-01-reintroduction-to-arrays>
-    Multidimensional with Arrays <06-02-multidimensional-arrays>
+    Multidimensional Arrays <06-02-multidimensional-arrays>
