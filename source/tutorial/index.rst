@@ -39,3 +39,4 @@ You can help us improve this tutorial by contributing to its `GitHub repository 
    Data Types and Control Structures <03-00-data-types-and-control-structures>
    Parrot Program <04-00-parrot-program>
    Methods <05-00-methods>
+   Arrays <06-00-arrays>
