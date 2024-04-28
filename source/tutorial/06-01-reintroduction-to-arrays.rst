@@ -7,14 +7,14 @@ We used one previously in the :doc:`Parrot Program <04-02-cycle-through-names>` 
 Declaring and Initializing Arrays
 ---------------------------------
 
-To declare an array in Vala, you specify the type of elements followed by square brackets (`[]`). Here's an example:
+To declare an array in Vala, you specify the type of elements followed by square brackets ``[]``. Here's an example:
 
 .. code-block:: vala
 
     int[] numbers = new int[5];
 
     
-In this code snippet, we declare an array called `numbers` that can store integers. The `new int[5]` syntax creates a new array with a length of 5, meaning it can hold up to 5 integer elements.
+In this code snippet, we declare an array called ``numbers`` that can store integers. The ``new int[5]`` creates a new array with a length of 5, meaning it can hold up to 5 integer elements.
 
 You can also initialize an array with specific values at the time of declaration:
 
@@ -25,7 +25,7 @@ You can also initialize an array with specific values at the time of declaration
 Accessing Array Elements
 ------------------------
 
-To access individual elements of an array, you use the index operator (`[]`). Array indices start from 0. Here's an example:
+To access individual elements of an array, you use the index operator ``[]``. Array indices start from 0. Here's an example:
 
 .. code-block:: vala
 
@@ -48,7 +48,7 @@ In this example, `numbers[1:4]` creates a slice that starts from index 1 (inclus
 Array Length
 -------------
 
-The length of an array can be obtained using the `length` member variable. For example:
+The length of an array can be obtained using the ``length`` member variable. For example:
 
 .. code-block:: vala
 
@@ -56,13 +56,13 @@ The length of an array can be obtained using the `length` member variable. For e
     int count = a.length; // length is 10
 
 .. note::
-    if you write `Object[] a = new Object[10]`, no objects will be created, just the array to store them in.
+    if you write ``Object[] a = new Object[10]``, no objects will be created, just the array to store them in.
 
 
 Resizing Arrays
 ----------------
 
-You can resize an array by calling `resize()` on it. It will keep the original content (as much as fits). 
+You can resize an array by calling ``resize()`` on it. It will keep the original content (as much as fits). 
 
 .. code-block:: vala
 
@@ -70,7 +70,7 @@ You can resize an array by calling `resize()` on it. It will keep the original c
     a.resize(12);
    
 .. tip::
-   You can append array elements dynamically with the += operator. However, this works only for locally defined or private arrays. The array is automatically reallocated if needed. Internally this reallocation happens with sizes growing in powers of 2 for run-time efficiency reasons. However, .length holds the actual number of elements, not the internal size
+   You can append array elements dynamically with the ``+=`` operator. However, this works only for locally defined or private arrays. The array is automatically reallocated if needed. Internally this reallocation happens with sizes growing in powers of 2 for run-time efficiency reasons. However, .length holds the actual number of elements, not the internal size
 
 .. code-block:: 
 
