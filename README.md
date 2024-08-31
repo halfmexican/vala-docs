@@ -2,9 +2,7 @@
 
 This is the source code repository for the Vala Documentation website.
 
-You can view the website online here: https://colinkiama.github.io/vala-docs/
-
-[Outline of work to do](./outline.md)
+You can view the website online here: https://docs.vala.dev/
 
 ## Requirements
 
@@ -30,8 +28,6 @@ Note: You may need to make the `./build-docs` script executable first:
 ```sh
 chmod +x ./build-docs
 ```
-
-or if you are using GNOME builder, you can click on the "Build" button.
 
 2. In the `build` directory, open a html file in your favourite web browser. `index.html` contains the home page.
 
