@@ -41,7 +41,7 @@ example:
 
    async void display_jpeg(string fnam) {
        // Load JPEG in a background thread and display it when loaded
-       [...]
+       // [...]
    }
 
 
@@ -52,7 +52,7 @@ or:
    async int fetch_webpage(string url, out string text) throws IOError {
        // Fetch a webpage asynchronously and when ready return the
        // HTTP status code and put the page contents in 'text'
-       [...]
+       // [...]
        text = result;
        return status;
    }
@@ -71,7 +71,7 @@ An async method may be called with either of these two forms:
    });
 
 Both forms starts the async method running with the given arguments.
-The second form in addition registers an !AsyncReadyCallback which is
+The second form in addition registers an ``AsyncReadyCallback`` which is
 executed when the method finishes. The callback
 takes a source object, ``obj``, and an instance of GAyncResult, ``res``,
 as arguments. In the callback the ``.end()`` method should be called to receive the
@@ -115,10 +115,10 @@ other code to use to resume the method's execution:
 .. code-block:: vala
 
    SourceFunc callback = fetch_webpage.callback;
-   [... store 'callback' somewhere ...]
+   /* … store 'callback' somewhere … */
    yield;
 
-Some code elsewhere must now call the stored !SourceFunc in order for
+Some code elsewhere must now call the stored ``SourceFunc`` in order for
 the method to be resumed.  This could be done by scheduling the GLib
 main loop to run it:
 
@@ -169,4 +169,3 @@ Examples
 --------
 
 See `Async Method Samples <https://wiki.gnome.org/Projects/Vala/AsyncSamples>`_ for examples of different ways that async may be used.
-
